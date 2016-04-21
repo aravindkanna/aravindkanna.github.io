@@ -1,2 +1,0 @@
-# aravindkanna.github.io
-blog
