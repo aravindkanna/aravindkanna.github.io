@@ -3089,7 +3089,7 @@
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/cse.jpg");
+		background: url("images/overlay.png"), url("../../images/cse3.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -3098,7 +3098,7 @@
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/whoami.jpg");
+		background: url("images/overlay.png"), url("../../images/whoami2.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -3107,13 +3107,20 @@
 /* Three */
 
 	#three {
-		background: url("images/overlay.png"), url("../../images/whereilive.jpg");
+		background: url("images/overlay.png"), url("../../images/whereilive1.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
 /* Work */
+
+	#work{
+		background: url("images/overlay.png"), url("../../images/whoami1.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
 
 	#work .row.images .image {
 		-moz-transition: all 1s ease;
@@ -3155,6 +3162,11 @@
 	#contact {
 		padding-bottom: 0;
 		overflow: hidden;
+		background: url("images/overlay.png"), url("../../images/contact2.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
 	}
 
 		#contact .box {
