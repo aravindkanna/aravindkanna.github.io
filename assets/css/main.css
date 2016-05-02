@@ -1929,7 +1929,7 @@
 
 /* Image */
 
-	.image {
+/*	.image {
 		position: relative;
 		display: inline-block;
 	}
@@ -1974,6 +1974,102 @@
 				margin: 0 auto;
 				width: auto;
 			}
+			*/
+
+
+		.image {
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image:after {
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+			background-image: url("images/overlay1.png");
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.2;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image img {
+			display: block;
+			width: 100%;
+		}
+
+		.image.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image.fit {
+			display: block;
+			width: 100%;
+		}
+
+			.image.fit img {
+				display: block;
+				width: 100%;
+			}
+
+		.image.feature {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.feature img {
+				display: block;
+				width: 100%;
+			}
+
+		.image.icon {
+			-moz-perspective: 500px;
+			-webkit-perspective: 500px;
+			-ms-perspective: 500px;
+			perspective: 500px;
+		}
+
+			.image.icon:before {
+				-moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+				-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+				-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+				transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+				color: #fff;
+				font-size: 6em;
+				height: 1em;
+				left: 50%;
+				line-height: 1em;
+				margin: -0.5em 0 0 -0.5em;
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				width: 1em;
+				z-index: 1;
+			}
+
+			.image.icon:hover:before {
+				-moz-transform: translateZ(1em);
+				-webkit-transform: translateZ(1em);
+				-ms-transform: translateZ(1em);
+				transform: translateZ(1em);
+			}
+
+			.image.icon:hover:after {
+				opacity: 1;
+			}
+
+	span.image.icon {
+		cursor: default;
+	}
+
 
 /* List */
 
